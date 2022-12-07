@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="datos">
+    <select #tratamiento>
+      <option *ngFor="let tratamiento of tratamientos" value="{{tratamiento.id}}">{{tratamiento.nombre}}</option>
+    </select>
+
+    <input matInput  type="number" #precio>
+
+    <mat-form-field class="precio">
+      <mat-label>Precio</mat-label>
+      <input type="number" matInput placeholder="1500.00">
+    </mat-form-field>
+
+    <button (click)="addTratamiento(tratamiento.value, precio.value)">Agregar</button>
+
+  </div>
+  <table>
+    <tr>
+      <th>Tratamiento</th>
+      <th>Precio</th>
+    </tr>
+    <tr *ngFor="let tratamiento of catalogo">
+      <td>{{tratamiento.id_tratamiento}}</td>
+      <td>{{tratamiento.precio}}</td>
+    </tr>
+  </table>
+</div>

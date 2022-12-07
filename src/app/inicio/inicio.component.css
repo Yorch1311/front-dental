@@ -1,0 +1,25 @@
+.container {
+  background-color: rgb(9, 179, 80);
+}
+
+/* .container label, select, input {
+  margin: 10px;
+  padding: 5px;
+} */
+
+.container input {
+  /* width: 50%; */
+}
+
+.citas {
+  text-decoration: none;
+  padding: 10px;
+  margin: 15px;
+  background-color: aliceblue;
+  display: block;
+  border-radius: 8px;
+}
+
+.item {
+  margin: 10px;
+}

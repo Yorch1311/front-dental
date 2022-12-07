@@ -1,0 +1,3 @@
+<div class="cita" *ngFor="let cita of citas">
+  <a class="citas" [routerLink]="['/cita', cita.id]">{{cita.fecha}} - {{cita.cliente}}</a>
+</div>
